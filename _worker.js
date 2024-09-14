@@ -1116,18 +1116,18 @@ function generateRemark(index, port, protocol, fragType) {
     switch (index) {
         case 0:
         case 1:
-            remark = `✔💦 ${protocol}${type} - Domain ${index + 1} : ${port}`;
+            remark = `💦 ${protocol}${type} - Domain ${index + 1} : ${port}`;
             break;
         case 2:
         case 3:
-            remark = `✔💦 ${protocol}${type} - IPv4 ${index - 1} : ${port}`;
+            remark = `💦 ${protocol}${type} - IPv4 ${index - 1} : ${port}`;
             break;
         case 4:
         case 5:
-            remark = `✔💦 ${protocol}${type} - IPv6 ${index - 3} : ${port}`;
+            remark = `💦 ${protocol}${type} - IPv6 ${index - 3} : ${port}`;
             break;
         default:
-            remark = `✔💦 ${protocol}${type} - Clean IP ${index - 5} : ${port}`;
+            remark = `💦 ${protocol}${type} - Clean IP ${index - 5} : ${port}`;
             break;
     }
 
@@ -1373,11 +1373,11 @@ async function renderHomePage (env, hostName, fragConfigs) {
             <tr>
                 <td>
                     ${config.address === 'Best-Ping' 
-                        ? `<div  style="justify-content: center;"><span><b>💦 BPB F - Best-Ping 💥</b></span></div>` 
+                        ? `<div  style="justify-content: center;"><span><b>💦✔ BPB F - Best-Ping 💥</b></span></div>` 
                         : config.address === 'WorkerLess'
-                            ? `<div  style="justify-content: center;"><span><b>💦 BPB F - WorkerLess ⭐</b></span></div>`
+                            ? `<div  style="justify-content: center;"><span><b>💦✔ BPB F - WorkerLess ⭐</b></span></div>`
                             : config.address === 'Best-Fragment'
-                                ? `<div  style="justify-content: center;"><span><b>💦 BPB F - Best-Fragment 😎</b></span></div>`
+                                ? `<div  style="justify-content: center;"><span><b>💦✔ BPB F - Best-Fragment 😎</b></span></div>`
                                 : config.address
                     }
                 </td>
